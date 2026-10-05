@@ -547,3 +547,397 @@ footer{padding:70px 6vw 28px;background:#030b05;border-top:1px solid var(--line)
   .sponsor-pill{min-width:138px;height:50px;font-size:9px;padding:0 16px}
   .sponsor-track{gap:12px;animation-duration:17s}
 }
+
+
+/* ===== CINEMATIC WEBSITE V3 ===== */
+:root{
+  --cinema-black:#020604;
+  --cinema-green:#07180e;
+  --cinema-red:#ef2028;
+  --cinema-gold:#f0c245;
+}
+.site-header{
+  height:82px;
+  padding:0 clamp(18px,5vw,78px);
+  background:linear-gradient(180deg,rgba(1,5,3,.93),rgba(1,5,3,.66));
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 12px 40px rgba(0,0,0,.18);
+  backdrop-filter:blur(16px);
+}
+.brand-solo img{width:148px!important;height:58px!important}
+.nav a{font-size:11px;letter-spacing:.1em}
+.nav-cta{
+  background:linear-gradient(135deg,#ed1d25,#991016);
+  border-color:#ff4f55;
+  box-shadow:0 0 30px rgba(237,29,37,.2);
+}
+
+.cinematic-hero{
+  min-height:1040px;
+  display:block;
+  padding:0;
+  isolation:isolate;
+  background:
+    radial-gradient(circle at 50% 12%,rgba(44,116,60,.18),transparent 28%),
+    radial-gradient(circle at 50% 70%,rgba(203,30,38,.12),transparent 30%),
+    linear-gradient(180deg,#020705 0%,#06120b 52%,#020604 100%);
+  overflow:hidden;
+}
+.hero-atmosphere{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    radial-gradient(circle at 16% 34%,rgba(30,105,50,.22),transparent 24%),
+    radial-gradient(circle at 82% 31%,rgba(255,155,40,.07),transparent 21%),
+    repeating-linear-gradient(90deg,transparent 0 120px,rgba(255,255,255,.008) 121px 122px);
+}
+.hero-atmosphere::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,transparent 55%,rgba(0,0,0,.8) 100%),
+    radial-gradient(ellipse at 50% 82%,rgba(255,40,48,.14),transparent 35%);
+}
+.hero-atmosphere::after{
+  content:"";
+  position:absolute;
+  left:7%;
+  right:7%;
+  bottom:116px;
+  height:250px;
+  background:
+    linear-gradient(90deg,transparent 0 8%,rgba(255,42,49,.2) 18%,transparent 31%,rgba(255,197,71,.12) 52%,transparent 68%,rgba(255,42,49,.18) 84%,transparent),
+    linear-gradient(180deg,rgba(255,255,255,.035),transparent 65%);
+  filter:blur(18px);
+  transform:perspective(600px) rotateX(62deg);
+  opacity:.75;
+}
+
+.jungle-art{
+  top:74px!important;
+  height:780px!important;
+  width:auto!important;
+  opacity:1!important;
+  z-index:2!important;
+  filter:drop-shadow(0 28px 52px rgba(0,0,0,.58)) saturate(1.13)!important;
+}
+.jungle-art-left{left:-20px!important}
+.jungle-art-right{right:-20px!important}
+
+.zoo-gate{
+  position:absolute;
+  top:158px;
+  right:10vw;
+  z-index:1;
+  width:230px;
+  padding:18px 18px 15px;
+  text-align:center;
+  color:#dfbd63;
+  border:2px solid rgba(223,189,99,.35);
+  border-bottom-width:5px;
+  border-radius:85px 85px 12px 12px;
+  transform:rotate(-2deg);
+  box-shadow:0 18px 50px rgba(0,0,0,.35),inset 0 0 36px rgba(223,189,99,.05);
+  background:linear-gradient(180deg,rgba(22,18,10,.8),rgba(7,11,8,.78));
+}
+.zoo-gate span{display:block;font-size:15px;font-weight:900;letter-spacing:.16em}
+.zoo-gate strong{display:block;font-family:"Bebas Neue";font-size:48px;line-height:.95;letter-spacing:.08em}
+
+.hero-center{
+  position:relative;
+  z-index:5;
+  width:min(980px,86vw);
+  margin:0 auto;
+  padding-top:145px;
+  text-align:center;
+}
+.hero-eyebrow{
+  justify-content:center;
+  color:#cbd6ca;
+  font-size:10px;
+  letter-spacing:.28em;
+  margin-bottom:20px;
+}
+.hero-eyebrow span{width:58px;background:linear-gradient(90deg,transparent,var(--cinema-red))}
+.hero-eyebrow span:last-child{background:linear-gradient(90deg,var(--cinema-red),transparent)}
+.hero-tag{
+  display:inline-flex;
+  padding:8px 14px;
+  margin-bottom:16px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:999px;
+  background:rgba(255,255,255,.025);
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.24em;
+  color:#8ca493;
+}
+.cinematic-title{
+  margin:0!important;
+  max-width:none!important;
+  font-family:"Bebas Neue",Impact,sans-serif!important;
+  line-height:.73!important;
+  text-transform:uppercase;
+}
+.title-cars{
+  display:block;
+  font-size:clamp(104px,12.5vw,190px);
+  letter-spacing:.015em;
+  color:#f5f5f0;
+  text-shadow:
+    0 3px 0 #b0b3b1,
+    0 7px 0 #5d6460,
+    0 12px 28px rgba(0,0,0,.68),
+    0 0 40px rgba(255,255,255,.05);
+}
+.title-cars i{
+  font-style:normal;
+  color:#fff;
+  text-shadow:0 0 18px rgba(237,32,40,.45),0 3px 0 #9a1118;
+}
+.title-animals{
+  display:block;
+  margin-top:12px;
+  font-size:clamp(118px,14.5vw,220px);
+  letter-spacing:-.015em;
+  color:var(--cinema-gold);
+  text-shadow:
+    0 3px 0 #9f6d0d,
+    0 8px 0 #553606,
+    0 16px 32px rgba(0,0,0,.55),
+    0 0 32px rgba(240,194,69,.14);
+}
+.cinematic-copy{
+  max-width:720px!important;
+  margin:32px auto 24px!important;
+  color:#c1cbc3!important;
+  font-size:15px!important;
+  line-height:1.8!important;
+}
+.event-chips{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  width:min(760px,100%);
+  margin:0 auto 18px;
+}
+.event-chip{
+  min-height:72px;
+  padding:14px 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+  background:linear-gradient(145deg,rgba(8,21,13,.78),rgba(3,9,6,.6));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.03),0 12px 32px rgba(0,0,0,.15);
+  backdrop-filter:blur(14px);
+}
+.event-chip b{font-size:9px;letter-spacing:.18em;color:var(--cinema-red)}
+.event-chip span{font-size:12px;font-weight:800;color:#ecf1eb}
+.cinematic-actions{justify-content:center;margin-top:16px}
+.btn-red,.btn-glass{
+  border-radius:12px;
+  min-height:56px;
+  padding:0 26px;
+}
+.btn-red{
+  background:linear-gradient(135deg,#f1262e,#a80c13);
+  color:#fff;
+  border-color:#ff5960;
+  box-shadow:0 12px 30px rgba(224,24,33,.24),inset 0 1px 0 rgba(255,255,255,.2);
+}
+.btn-red span,.btn-glass span{margin-left:14px}
+.btn-glass{
+  border-color:rgba(255,255,255,.18);
+  background:rgba(255,255,255,.04);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+.car-stage{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:42px;
+  height:340px;
+  z-index:4;
+  pointer-events:none;
+}
+.hero-car{
+  position:absolute;
+  bottom:0;
+  filter:drop-shadow(0 28px 26px rgba(0,0,0,.65));
+}
+.hero-car-black{
+  left:-2.5vw;
+  width:min(56vw,820px);
+  transform:rotate(-1deg);
+}
+.hero-car-red{
+  right:0;
+  width:min(47vw,690px);
+  transform:translateY(18px) rotate(1.5deg);
+}
+.wet-reflection{
+  position:absolute;
+  bottom:-8px;
+  height:85px;
+  filter:blur(17px);
+  opacity:.34;
+  border-radius:50%;
+}
+.reflection-left{
+  left:8vw;
+  width:38vw;
+  background:linear-gradient(90deg,transparent,rgba(239,32,40,.6),rgba(255,177,56,.28),transparent);
+}
+.reflection-right{
+  right:5vw;
+  width:34vw;
+  background:linear-gradient(90deg,transparent,rgba(239,32,40,.58),rgba(255,255,255,.14),transparent);
+}
+
+.cinematic-collab{
+  position:absolute!important;
+  left:50%;
+  bottom:48px;
+  transform:translateX(-50%);
+  width:min(400px,34vw)!important;
+  padding:16px 22px!important;
+  border-radius:18px!important;
+  background:linear-gradient(145deg,rgba(4,13,8,.88),rgba(7,24,12,.8))!important;
+  border:1px solid rgba(240,194,69,.34)!important;
+  z-index:8!important;
+}
+.cinematic-collab .collab-label{margin-bottom:10px!important;font-size:7px!important}
+.cinematic-collab .collab-logos{gap:14px!important}
+.cinematic-collab .collab-street{max-width:128px!important}
+.cinematic-collab .collab-zoo{max-width:112px!important}
+.cinematic-collab .collab-x{width:30px!important;height:30px!important;font-size:18px!important}
+
+.ticker{
+  position:relative;
+  z-index:10;
+  margin:0!important;
+  transform:none!important;
+  background:linear-gradient(90deg,#d5a82e,#ffd766,#c99219)!important;
+  box-shadow:0 -10px 28px rgba(0,0,0,.2);
+}
+.sponsor-strip{
+  min-height:126px;
+  background:linear-gradient(180deg,#040a06,#07110a);
+}
+.sponsor-pill{
+  border-radius:999px!important;
+  background:rgba(255,255,255,.025)!important;
+}
+
+.info-band{
+  background:
+    radial-gradient(circle at 18% 15%,rgba(73,183,86,.16),transparent 26%),
+    linear-gradient(135deg,#07170d,#0b2514 45%,#061009)!important;
+}
+.price-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018))!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  backdrop-filter:blur(14px);
+}
+.price-card.featured{
+  color:var(--ink)!important;
+  border-color:rgba(240,194,69,.38)!important;
+  box-shadow:0 20px 60px rgba(0,0,0,.18);
+}
+.price-card.featured .big-value,.price-card.featured .card-label{color:var(--cinema-gold)}
+.partner-section{
+  background:linear-gradient(135deg,#d4a729,#ffd66d)!important;
+}
+
+@media(max-width:1000px){
+  .cinematic-hero{min-height:1040px}
+  .hero-center{padding-top:125px;width:min(900px,90vw)}
+  .jungle-art{height:690px!important}
+  .jungle-art-left{left:-85px!important}
+  .jungle-art-right{right:-85px!important}
+  .zoo-gate{right:4vw;top:170px;transform:scale(.82)}
+  .car-stage{height:310px}
+  .hero-car-black{left:-9vw;width:68vw}
+  .hero-car-red{right:-7vw;width:58vw}
+  .cinematic-collab{width:min(390px,43vw)!important}
+}
+@media(max-width:700px){
+  .site-header{height:72px}
+  .cinematic-hero{
+    min-height:980px;
+    overflow:hidden;
+  }
+  .hero-center{
+    width:calc(100% - 30px);
+    padding-top:100px;
+  }
+  .hero-eyebrow{font-size:7px;letter-spacing:.14em}
+  .hero-eyebrow span{width:22px}
+  .hero-tag{font-size:7px;letter-spacing:.16em}
+  .title-cars{font-size:clamp(72px,24vw,100px)}
+  .title-animals{font-size:clamp(80px,27vw,112px);margin-top:10px}
+  .cinematic-copy{font-size:12px!important;line-height:1.65!important;margin:23px auto 18px!important}
+  .event-chips{
+    grid-template-columns:1fr;
+    gap:7px;
+    max-width:340px;
+  }
+  .event-chip{min-height:52px;padding:10px 13px}
+  .event-chip span{font-size:11px}
+  .cinematic-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    max-width:340px;
+    margin:12px auto 0;
+  }
+  .jungle-art{
+    top:72px!important;
+    height:560px!important;
+    opacity:.92!important;
+  }
+  .jungle-art-left{left:-150px!important}
+  .jungle-art-right{right:-150px!important}
+  .zoo-gate{
+    top:505px;
+    right:-15px;
+    width:160px;
+    transform:rotate(-3deg) scale(.74);
+    opacity:.64;
+  }
+  .car-stage{
+    bottom:96px;
+    height:215px;
+  }
+  .hero-car-black{
+    left:-32vw;
+    width:103vw;
+  }
+  .hero-car-red{
+    right:-28vw;
+    width:82vw;
+    transform:translateY(14px) rotate(2deg);
+  }
+  .cinematic-collab{
+    bottom:34px;
+    width:78vw!important;
+    max-width:340px!important;
+    padding:12px 16px!important;
+  }
+  .cinematic-collab .collab-street{max-width:105px!important}
+  .cinematic-collab .collab-zoo{max-width:88px!important}
+  .ticker-track{font-size:20px!important}
+}
+@media(max-width:390px){
+  .cinematic-hero{min-height:940px}
+  .title-cars{font-size:72px}
+  .title-animals{font-size:82px}
+  .jungle-art-left{left:-165px!important}
+  .jungle-art-right{right:-165px!important}
+}
