@@ -296,3 +296,254 @@ footer{padding:70px 6vw 28px;background:#030b05;border-top:1px solid var(--line)
   .quick-facts{grid-template-columns:1fr}
   .quick-facts div:last-child{grid-column:auto}
 }
+
+
+/* --- 2026 premium visual refresh --- */
+.site-header{
+  position:absolute;
+  height:86px;
+  padding:0 5vw;
+  background:linear-gradient(180deg,rgba(3,11,6,.78),rgba(3,11,6,.22));
+  backdrop-filter:blur(8px);
+}
+.brand-solo{min-width:auto!important}
+.brand-solo img{
+  width:150px!important;
+  height:64px!important;
+  object-fit:contain;
+}
+.nav{gap:26px}
+
+.hero{
+  min-height:100svh;
+  grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr);
+  padding:132px 7vw 76px;
+  background:
+    radial-gradient(circle at 76% 35%,rgba(44,138,69,.22),transparent 25%),
+    radial-gradient(circle at 50% 85%,rgba(243,201,64,.06),transparent 32%),
+    linear-gradient(135deg,#041009 0%,#07180d 46%,#08120b 100%);
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:86px 0 0;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.34),transparent 25%,transparent 75%,rgba(0,0,0,.28)),
+    radial-gradient(circle at 50% 30%,rgba(255,255,255,.03),transparent 44%);
+  pointer-events:none;
+}
+.hero-content{z-index:4}
+.hero h1{
+  font-size:clamp(84px,10.2vw,156px);
+  letter-spacing:-.015em;
+  text-shadow:0 18px 58px rgba(0,0,0,.48);
+}
+.hero h1 em{
+  color:var(--yellow);
+  text-shadow:0 0 30px rgba(243,201,64,.18);
+}
+.hero-copy{max-width:670px}
+
+.jungle-art{
+  position:absolute;
+  top:82px;
+  bottom:-20px;
+  height:calc(100% - 60px);
+  width:auto;
+  pointer-events:none;
+  z-index:1;
+  opacity:.88;
+  filter:drop-shadow(0 28px 45px rgba(0,0,0,.45));
+}
+.jungle-art-left{left:-155px}
+.jungle-art-right{right:-155px}
+.animal-print{opacity:.045}
+
+.collab-lockup{
+  position:relative;
+  z-index:4;
+  align-self:center;
+  justify-self:center;
+  width:min(100%,500px);
+  padding:30px 34px;
+  border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(145deg,rgba(6,18,10,.62),rgba(10,35,18,.32));
+  box-shadow:0 25px 70px rgba(0,0,0,.3);
+  backdrop-filter:blur(12px);
+  border-radius:26px;
+}
+.collab-lockup::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:linear-gradient(110deg,rgba(255,255,255,.055),transparent 30%);
+  pointer-events:none;
+}
+.collab-label{
+  display:block;
+  text-align:center;
+  font-size:9px;
+  letter-spacing:.28em;
+  font-weight:900;
+  color:#9cae9e;
+  margin-bottom:23px;
+}
+.collab-logos{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:22px;
+}
+.collab-logos img{
+  width:100%;
+  max-height:150px;
+  object-fit:contain;
+  filter:drop-shadow(0 10px 26px rgba(0,0,0,.28));
+}
+.collab-street{max-width:190px;justify-self:end}
+.collab-zoo{max-width:175px;justify-self:start}
+.collab-x{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--red);
+  color:white;
+  font-family:"Bebas Neue";
+  font-size:25px;
+  box-shadow:0 10px 26px rgba(227,30,36,.2);
+}
+
+.sponsor-strip{
+  position:relative;
+  z-index:5;
+  display:grid;
+  grid-template-columns:260px 1fr;
+  align-items:center;
+  min-height:118px;
+  padding:0 5vw;
+  background:#050d08;
+  border-top:1px solid rgba(255,255,255,.1);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  overflow:hidden;
+}
+.sponsor-strip-head{padding-right:30px}
+.sponsor-strip-head span{
+  display:block;
+  font-family:"Bebas Neue";
+  font-size:30px;
+  letter-spacing:.055em;
+}
+.sponsor-strip-head small{
+  display:block;
+  color:#87968a;
+  margin-top:4px;
+  font-size:11px;
+}
+.sponsor-marquee{
+  overflow:hidden;
+  position:relative;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.sponsor-track{
+  display:flex;
+  align-items:center;
+  width:max-content;
+  gap:16px;
+  animation:sponsorMove 22s linear infinite;
+}
+.sponsor-pill{
+  min-width:170px;
+  height:58px;
+  padding:0 24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.015));
+  border-radius:12px;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.14em;
+  color:#d9e2d8;
+}
+@keyframes sponsorMove{
+  from{transform:translateX(-50%)}
+  to{transform:translateX(0)}
+}
+.sponsor-marquee:hover .sponsor-track{animation-play-state:paused}
+
+.event-section{
+  background:
+    radial-gradient(circle at 20% 15%,rgba(26,105,52,.12),transparent 25%),
+    linear-gradient(180deg,#07140b,#06110a);
+}
+.mini-grid article{
+  background:linear-gradient(145deg,rgba(255,255,255,.018),rgba(255,255,255,.005));
+}
+.price-card{border-radius:20px}
+.form-wrap{border-radius:22px}
+.partner-section{position:relative;overflow:hidden}
+.partner-section::after{
+  content:"";
+  position:absolute;
+  width:330px;height:330px;
+  right:-80px;bottom:-140px;
+  border:60px solid rgba(7,20,11,.08);
+  border-radius:50%;
+}
+.footer-logos img{background:transparent!important}
+
+@media(max-width:1000px){
+  .hero{
+    grid-template-columns:1fr;
+    padding:125px 8vw 70px;
+  }
+  .collab-lockup{
+    width:min(100%,620px);
+    margin-top:18px;
+  }
+  .jungle-art{opacity:.52;height:72%}
+  .jungle-art-left{left:-145px}
+  .jungle-art-right{right:-145px}
+  .sponsor-strip{grid-template-columns:1fr;padding:24px 5vw;gap:18px}
+  .sponsor-strip-head{padding:0}
+}
+@media(max-width:700px){
+  .site-header{height:74px;padding:0 17px}
+  .brand-solo img{width:112px!important;height:48px!important}
+  .nav{top:74px}
+  .hero{
+    padding:104px 18px 48px;
+    min-height:auto;
+    gap:24px;
+  }
+  .hero::before{inset:74px 0 0}
+  .hero h1{font-size:clamp(64px,21vw,86px)}
+  .hero-copy{max-width:95%}
+  .jungle-art{
+    top:74px;
+    height:63%;
+    opacity:.34;
+  }
+  .jungle-art-left{left:-165px}
+  .jungle-art-right{right:-165px}
+  .collab-lockup{
+    width:100%;
+    padding:22px 18px;
+    border-radius:18px;
+    margin-top:3px;
+  }
+  .collab-label{font-size:7px;margin-bottom:16px}
+  .collab-logos{gap:12px}
+  .collab-street{max-width:135px}
+  .collab-zoo{max-width:112px}
+  .collab-x{width:32px;height:32px;font-size:20px}
+  .sponsor-strip{min-height:auto;padding:22px 18px}
+  .sponsor-strip-head span{font-size:25px}
+  .sponsor-pill{min-width:138px;height:50px;font-size:9px;padding:0 16px}
+  .sponsor-track{gap:12px;animation-duration:17s}
+}
