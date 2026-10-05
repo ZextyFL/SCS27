@@ -30,36 +30,119 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-glow"></div>
-      <div class="animal-print print-one"></div>
-      <div class="animal-print print-two"></div>
+    <section id="home" class="hero cinematic-hero">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
 
       <img class="jungle-art jungle-art-left" src="/assets/jungle-left.webp" alt="" aria-hidden="true" />
       <img class="jungle-art jungle-art-right" src="/assets/jungle-right.webp" alt="" aria-hidden="true" />
 
-      <div class="hero-content">
-        <div class="eyebrow"><span></span> STREETCARS SU × PARAMARIBO ZOO</div>
-        <h1>
-          <span class="hero-small">SURINAME'S JUNGLE CAR EVENT</span>
-          CARS <em>&</em><br />ANIMALS
+      <div class="zoo-gate" aria-hidden="true">
+        <span>PARAMARIBO</span>
+        <strong>ZOO</strong>
+      </div>
+
+      <div class="hero-center">
+        <div class="eyebrow hero-eyebrow"><span></span> STREETCARS SU × PARAMARIBO ZOO <span></span></div>
+        <div class="hero-tag">SURINAME'S JUNGLE CAR EVENT</div>
+        <h1 class="cinematic-title">
+          <span class="title-cars">CARS <i>&</i></span>
+          <span class="title-animals">ANIMALS</span>
         </h1>
-        <p class="hero-copy">
-          Waar de autoscene en de jungle samenkomen. Een unieke familiedag vol show cars,
-          dieren, muziek, activiteiten en awards midden in Paramaribo Zoo.
+        <p class="hero-copy cinematic-copy">
+          Waar automotive culture, jungle energy en Paramaribo Zoo samenkomen.
+          Een unieke dag met show cars, animals, awards, entertainment en family vibes.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#aanmelden">MELD JE AUTO AAN</a>
-          <a class="btn btn-ghost" href="#event">BEKIJK HET EVENT</a>
+
+        <div class="event-chips">
+          <div class="event-chip">
+            <b>DATUM</b>
+            <span>Binnenkort bekend</span>
+          </div>
+          <div class="event-chip">
+            <b>LOCATIE</b>
+            <span>Paramaribo Zoo</span>
+          </div>
+          <div class="event-chip">
+            <b>EVENT</b>
+            <span>Cars • Animals • Family</span>
+          </div>
         </div>
-        <div class="quick-facts">
-          <div><strong>LOCATIE</strong><span>Paramaribo Zoo</span></div>
-          <div><strong>DATUM</strong><span>Binnenkort bekend</span></div>
-          <div><strong>VOOR IEDEREEN</strong><span>Cars • Animals • Family</span></div>
+
+        <div class="hero-actions cinematic-actions">
+          <a class="btn btn-red" href="#aanmelden">MELD JE AUTO AAN <span>→</span></a>
+          <a class="btn btn-glass" href="#prijzen">BEKIJK ENTREE <span>↓</span></a>
         </div>
       </div>
 
-      <div class="collab-lockup" aria-label="Samenwerking Streetcars SU en Paramaribo Zoo">
+      <div class="car-stage" aria-hidden="true">
+        <svg class="hero-car hero-car-black" viewBox="0 0 820 330" role="img">
+          <defs>
+            <linearGradient id="blackBody" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1f2328"/>
+              <stop offset=".35" stop-color="#06080a"/>
+              <stop offset=".7" stop-color="#111417"/>
+              <stop offset="1" stop-color="#000"/>
+            </linearGradient>
+            <linearGradient id="glassBlack" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#27414d"/>
+              <stop offset="1" stop-color="#05090c"/>
+            </linearGradient>
+            <radialGradient id="lampGlowBlack">
+              <stop offset="0" stop-color="#fff"/>
+              <stop offset=".28" stop-color="#ffe29a"/>
+              <stop offset="1" stop-color="#ff7b00" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="420" cy="282" rx="335" ry="34" fill="#000" opacity=".55"/>
+          <path d="M102 232C139 184 212 164 293 154L368 87C393 64 427 54 471 54H566C602 54 625 68 650 90L706 143C753 153 784 174 794 218L802 251H75L83 239Z" fill="url(#blackBody)" stroke="#353a3f" stroke-width="4"/>
+          <path d="M319 150L389 92C407 78 429 72 462 72H557C575 72 588 79 603 94L652 145Z" fill="url(#glassBlack)" stroke="#2c3940" stroke-width="4"/>
+          <path d="M485 75V145" stroke="#2a3237" stroke-width="4"/>
+          <path d="M90 218H188L217 186H128C109 192 98 203 90 218Z" fill="#0c1013"/>
+          <path d="M686 168H744C763 175 777 191 783 216H695Z" fill="#12161a"/>
+          <ellipse cx="225" cy="252" rx="71" ry="71" fill="#060606"/>
+          <ellipse cx="225" cy="252" rx="45" ry="45" fill="#252a2d" stroke="#737b80" stroke-width="4"/>
+          <ellipse cx="225" cy="252" rx="12" ry="12" fill="#050505"/>
+          <ellipse cx="655" cy="252" rx="71" ry="71" fill="#060606"/>
+          <ellipse cx="655" cy="252" rx="45" ry="45" fill="#252a2d" stroke="#737b80" stroke-width="4"/>
+          <ellipse cx="655" cy="252" rx="12" ry="12" fill="#050505"/>
+          <ellipse cx="139" cy="208" rx="56" ry="34" fill="url(#lampGlowBlack)"/>
+          <rect x="104" y="196" width="75" height="20" rx="10" fill="#fff4cf"/>
+          <rect x="706" y="204" width="59" height="10" rx="5" fill="#e51c23"/>
+          <path d="M310 167C404 154 554 154 674 165" stroke="#cf151d" stroke-width="5" opacity=".55"/>
+          <path d="M147 243H714" stroke="#fff" stroke-opacity=".08" stroke-width="3"/>
+        </svg>
+
+        <svg class="hero-car hero-car-red" viewBox="0 0 760 300" role="img">
+          <defs>
+            <linearGradient id="redBody" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff3b3f"/>
+              <stop offset=".35" stop-color="#b80f19"/>
+              <stop offset=".75" stop-color="#510309"/>
+              <stop offset="1" stop-color="#1a0203"/>
+            </linearGradient>
+            <linearGradient id="glassRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#263b45"/>
+              <stop offset="1" stop-color="#060809"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="385" cy="258" rx="303" ry="28" fill="#000" opacity=".5"/>
+          <path d="M92 218C120 175 190 159 270 151L348 91C370 75 399 67 438 67H511C551 67 580 84 610 111L648 148C690 153 723 172 740 211L747 235H68L76 225Z" fill="url(#redBody)" stroke="#d12d34" stroke-width="4"/>
+          <path d="M292 149L365 98C384 84 404 79 435 79H505C530 79 549 90 571 111L609 147Z" fill="url(#glassRed)" stroke="#222c31" stroke-width="4"/>
+          <path d="M470 82V147" stroke="#20272b" stroke-width="4"/>
+          <ellipse cx="206" cy="234" rx="61" ry="61" fill="#050505"/>
+          <ellipse cx="206" cy="234" rx="38" ry="38" fill="#272b2d" stroke="#8a8e91" stroke-width="4"/>
+          <ellipse cx="604" cy="234" rx="61" ry="61" fill="#050505"/>
+          <ellipse cx="604" cy="234" rx="38" ry="38" fill="#272b2d" stroke="#8a8e91" stroke-width="4"/>
+          <rect x="112" y="188" width="76" height="16" rx="8" fill="#fff" opacity=".92"/>
+          <rect x="652" y="192" width="59" height="9" rx="5" fill="#ff3540"/>
+          <path d="M275 163C381 150 530 151 644 160" stroke="#ff878b" stroke-width="4" opacity=".7"/>
+        </svg>
+
+        <div class="wet-reflection reflection-left"></div>
+        <div class="wet-reflection reflection-right"></div>
+      </div>
+
+      <div class="collab-lockup cinematic-collab" aria-label="Samenwerking Streetcars SU en Paramaribo Zoo">
         <span class="collab-label">OFFICIAL COLLABORATION</span>
         <div class="collab-logos">
           <img class="collab-street" src="/assets/streetcars-su.svg" alt="Streetcars SU" />
@@ -67,8 +150,6 @@
           <img class="collab-zoo" src="/assets/paramaribo-zoo.svg" alt="Paramaribo Zoo" />
         </div>
       </div>
-
-      <div class="scroll-mark">SCROLL <span>↓</span></div>
     </section>
 
     <section class="ticker" aria-hidden="true">
